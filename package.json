@@ -5,6 +5,14 @@
   "description": "Hands-free voice assistant for the DeepSeek Harness Web UI: dictate, auto-send, hear the answer in streaming MiMo or Edge voices.",
   "type": "module",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fushenhuanhuan/dsh-voice-assistant.git"
+  },
+  "homepage": "https://github.com/fushenhuanhuan/dsh-voice-assistant#readme",
+  "bugs": {
+    "url": "https://github.com/fushenhuanhuan/dsh-voice-assistant/issues"
+  },
   "keywords": [
     "deepseek-harness",
     "dsh",

@@ -27,7 +27,7 @@ Answers are read with **Xiaomi MiMo streaming voices** by default (first audio i
 ## Install
 
 ```bash
-git clone https://github.com/<your-name>/dsh-voice-assistant.git
+git clone https://github.com/fushenhuanhuan/dsh-voice-assistant.git
 ```
 
 Install that directory as a local DSH bundle (the agent in DSH installs it with the plugin manager's

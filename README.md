@@ -25,7 +25,7 @@
 **步骤**
 
 ```bash
-git clone https://github.com/<your-name>/dsh-voice-assistant.git
+git clone https://github.com/fushenhuanhuan/dsh-voice-assistant.git
 ```
 
 然后在 DSH 里把这个目录装成本地 bundle：让 DSH 的 agent 用插件管理器安装该目录的绝对路径（`install_bundle`）。DSH 会把它**链接**进当前 profile，不复制文件，之后在「设置 → 插件」里能看到「语音助手」，可以随时停用或卸载。
