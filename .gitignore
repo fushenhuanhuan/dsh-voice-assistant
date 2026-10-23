@@ -1,0 +1,15 @@
+# Dependencies (the plugin itself ships without any)
+node_modules/
+
+# Local runtime leftovers
+*.log
+*.tgz
+.dsh/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp

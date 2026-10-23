@@ -1,0 +1,53 @@
+{
+  "name": "@local/voice-assistant",
+  "version": "1.4.1",
+  "private": true,
+  "description": "Hands-free voice assistant for the DeepSeek Harness Web UI: dictate, auto-send, hear the answer in streaming MiMo or Edge voices.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "voice-assistant",
+    "wake-word",
+    "speech-to-text",
+    "tts",
+    "mimo",
+    "edge-tts"
+  ],
+  "scripts": {
+    "check": "node scripts/check.mjs"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib/msedge-tts.cjs",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "scripts/check.mjs",
+    "THIRD_PARTY.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
+

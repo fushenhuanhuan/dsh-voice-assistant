@@ -1,0 +1,7 @@
+* text=auto eol=lf
+
+# Registry scripts are UTF-16 LE with CRLF; any line-ending conversion would corrupt them.
+*.reg -text
+
+# Vendored bundle: leave its bytes alone.
+lib/*.cjs -text
